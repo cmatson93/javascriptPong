@@ -12,15 +12,47 @@
     <title>Pong</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="sketch.js"></script>
-    <script type="text/javascript" src="lib/p5.min.js"></script>
+    <!-- p5.js library -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="jumbotron text-center jumbotron-fluid">
+        <div class="container ">
+            <h1 class="display-1">PONG</h1>
+            <p class="lead">Grab a friend and play a game of pong!</p>
+        </div>
+    </div>
+    <div class="player-controls">
+        <div class="p1">
+            <h2>Player 1 controls</h2>
+            <h4>The "W" key is up</h4>
+            <h4>and down is "S"</h4>
+        </div>
+        <div class="p2">
+            <h2>Player 2 controls</h2>
+            <h4>Up arrow and</h4>
+            <h4>down arrow to move</h4>
+        </div>
+    </div>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
+    <!-- javascript source code -->
+    <script src="sketch.js"></script>
 </body>
 
 </html>

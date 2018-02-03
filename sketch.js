@@ -12,7 +12,10 @@ var ball, ballVelocity;
 
 function setup() {
 
-    createCanvas(600, 400);
+    cnv = createCanvas(800, 400);
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - 450);
+    cnv.position(x, y);
 
     player1Position = player2Position = height / 2 - 50; // initialize player position to mid screen
 
