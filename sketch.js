@@ -47,7 +47,11 @@ function draw() {
 
     handlePaddles();
 
-    handleBall();
+    // $("#play").on("click", function() {
+    //     console.log("CLICKED");
+    //     handleBall();
+    // })
+
 }
 
 function handleBall() {
