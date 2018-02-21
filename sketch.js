@@ -4,6 +4,8 @@ const BALL_RADIUS = 20;
 const PADDLE_WIDTH = 10;
 const PADDLE_HEIGHT = 100;
 
+var play = false;
+
 var player1Position, player2Position;
 var player1Velocity, player2Velocity;
 var player1Score, player2Score;
@@ -14,7 +16,7 @@ function setup() {
 
     cnv = createCanvas(800, 400);
     var x = (windowWidth - width) / 2;
-    var y = (windowHeight - 450);
+    var y = (windowHeight - 300);
     cnv.position(x, y);
 
     player1Position = player2Position = height / 2 - 50; // initialize player position to mid screen
@@ -46,15 +48,35 @@ function draw() {
     text(player1Score + "  |  " + player2Score, width / 2, 50);
 
     handlePaddles();
-
-    // $("#play").on("click", function() {
-    //     console.log("CLICKED");
-    //     handleBall();
-    // })
+    handleBall();
 
 }
 
+$("#play").on("click", function() {
+    console.log("CLICKED");
+    play = true;
+    console.log(play);
+    handleBall();
+})
+
+
+if (play = true) {
+    console.log("true");
+}
+if (play === true) {
+    console.log("===");
+}
+
+if (play == ture) {
+    console.log("==");
+}
+
+if (play === "true") {
+    console.log("string");
+}
+
 function handleBall() {
+    console.log("YEP");
 
     ball.x += ballVelocity.x;
     ball.y += ballVelocity.y;
